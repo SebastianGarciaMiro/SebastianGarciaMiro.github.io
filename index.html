@@ -1,0 +1,154 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastian García Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Sebastian García</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="hero">
+    <div class="hero-content">
+      <img src="images/profile.jpg" alt="Sebastian García" class="profile-pic">
+      <div>
+        <h2>Hello, I'm Sebastian</h2>
+        <p>EPD major at Berklee College of Music. Passionate about acoustical engineering, guitar, and web development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Selected Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Acoustic Modeling">
+        <h3>Acoustic Modeling</h3>
+        <p>Optimized restaurant acoustics for live concerts.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Guitar Rig">
+        <h3>Guitar Rig</h3>
+        <p>Developed a dynamic pedalboard setup and signal chain.</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sebastian@example.com">sebastian@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sebastian García. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+<!-- File: style.css -->
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.hero {
+  background: #e2e2e2;
+  padding: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.projects {
+  padding: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+}
+
+.contact {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f4f4f4;
+  font-size: 0.9rem;
+}
