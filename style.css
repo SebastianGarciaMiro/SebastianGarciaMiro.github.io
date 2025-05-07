@@ -1,54 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sebastian Garcia Miro Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1 class="logo">Sebastian Garcia Miro</h1>
-    <img src="images/profile.jpg" alt="Sebastian Garcia Miro" class="profile-pic">
-  </header>
+</* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <section id="about" class="about">
-    <h2>About</h2>
-    <p>Berklee College of Music student majoring in Electronic Production and Design with a double minor in Acoustics and Electronics and Creative Coding. Deep passion for acoustics, audio, guitar, production, and recording.</p>
-  </section>
+/* Page background and text */
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+}
 
-  <section id="rig" class="rig">
-    <h2>Current Guitar Rig</h2>
-    <div class="rig-grid">
-      <figure class="rig-item">
-        <img src="images/guitar.jpg" alt="My guitar">
-        <figcaption>My Guitar</figcaption>
-      </figure>
-      <figure class="rig-item">
-        <img src="images/pedalboard.jpg" alt="My pedalboard">
-        <figcaption>Pedalboard</figcaption>
-      </figure>
-      <figure class="rig-item">
-        <img src="images/amp.jpg" alt="My amp">
-        <figcaption>Amp</figcaption>
-      </figure>
-    </div>
-  </section>
+/* Header / site title */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>You can reach out to me if you have any questions.</p>
-    <ul class="contact-list">
-      <li>Email: <a href="mailto:sebastiangarciamiro4@gmail.com">sebastiangarciamiro4@gmail.com</a></li>
-      <li>Instagram: <a href="https://instagram.com/tatangm_">@tatangm_</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/sebastian-garc%C3%ADa-mir%C3%B3-84b1b1318/">sebastian-garcía-miró</a></li>
-      <li>Phone: <a href="tel:+16177559953">+1 (617) 755‑9953</a></li>
-    </ul>
-  </section>
+/* Center profile picture */
+.profile-pic {
+  display: block;
+  margin: 1rem auto;
+  width: 150px;
+  border-radius: 50%;
+}
 
-  <footer>
-    <p>&copy; 2025 Sebastian Garcia Miro. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+/* Section spacing */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Section titles: centered, bold, underlined */
+h2 {
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+/* About text centering */
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Rig gallery grid */
+.rig-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.rig-item {
+  text-align: center;
+}
+.rig-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+.rig-item figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Contact block styling */
+.contact p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact-list {
+  list-style: none;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+.contact-list a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
